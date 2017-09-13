@@ -15,7 +15,7 @@ return [
          *
          *    reference: https://www.appboy.com/documentation/REST_API/#user-data
          */
-		"send" => [
+		"track" => [
 			"httpMethod" => "POST",
 			"uri" => "/users/track",
 			"summary" => "Track data for a user",

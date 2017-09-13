@@ -41,10 +41,10 @@ class Client {
 	 * @var array
 	 */
 	private $globalParams = [
-			"Authorization" => [
-				"type" => "object",
+			"app_group_id" => [
+				"type" => "string",
 				"location" => "json",
-				"required" => false,
+				"required" => true,
 			],
 			"Content-Type" => [
 				"type" => "string",
@@ -62,7 +62,7 @@ class Client {
 	*/
 	public function __construct($appGroupId = null, array $settings = array()) {
 		if ($appGroupId) {
-			$settings["Authorization"] = ["app_group_id" => $appGroupId];
+			$settings["app_group_id"] = $appGroupId;
 		}
 		$this->settings = $settings;
 	}
