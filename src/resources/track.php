@@ -25,7 +25,19 @@ return [
 					"type" => "array",
 					"location" => "json",
 					"description" => "Array of user attributes",
-					"required" => true,
+					"required" => false,
+				],
+				"events" => [
+					"type" => "array",
+					"location" => "json",
+					"description" => "Array of user events",
+					"required" => false,
+				],
+				"purchases" => [
+					"type" => "array",
+					"location" => "json",
+					"description" => "Array of user purchases",
+					"required" => false,
 				],
 			]
 		],
